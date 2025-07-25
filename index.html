@@ -4,10 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PH-Assignment-02</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/tailwind.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <!-- Navbar -->
+    <nav
+      class="flex items-center justify-between px-4 md:px-16 py-4 bg-white shadow-sm"
+    >
+      <!-- Logo and Brand -->
+      <div class="flex items-center space-x-2">
+        <img src="./assets/logo.png" alt="Logo" />
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6 text-sm text-gray-800">
+        <a href="#" class="font-semibold text-black">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About us</a>
+        <div class="flex items-center space-x-1">
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h10a1 1 0 00.95-.68L21 9M7 13V6h14"
+            />
+          </svg>
+          <span>Cart ($56)</span>
+        </div>
+      </div>
+
+      <!-- Mobile View (Cart only) -->
+      <div class="flex md:hidden items-center space-x-1">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h10a1 1 0 00.95-.68L21 9M7 13V6h14"
+          />
+        </svg>
+        <span class="text-sm font-medium">Cart ($56)</span>
+      </div>
+    </nav>
+
     <footer></footer>
   </body>
 </html>
