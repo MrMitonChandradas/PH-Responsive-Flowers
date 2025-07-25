@@ -18,10 +18,16 @@
       </div>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center space-x-6 text-sm text-gray-800">
-        <a href="#" class="font-semibold text-black">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About us</a>
+      <div
+        class="hover:text-fuchsia-600 hidden md:flex items-center space-x-6 text-sm text-gray-800"
+      >
+        <a href="#" class="font-bold text-black hover:text-fuchsia-600">Home</a>
+        <a href="#" class="text-gray-500 hover:text-purple-700 font-bold"
+          >Shop</a
+        >
+        <a href="#" class="text-gray-500 hover:text-purple-700 font-bold"
+          >About us</a
+        >
         <div class="flex items-center space-x-1">
           <svg
             class="w-5 h-5"
@@ -36,12 +42,12 @@
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h10a1 1 0 00.95-.68L21 9M7 13V6h14"
             />
           </svg>
-          <span>Cart ($56)</span>
+          <span class="font-bold">Cart ($56)</span>
         </div>
       </div>
 
       <!-- Mobile View (Cart only) -->
-      <div class="flex md:hidden items-center space-x-1">
+      <div class="hover:text-fuchsia-600 flex md:hidden items-center space-x-1">
         <svg
           class="w-6 h-6"
           fill="none"
@@ -55,7 +61,7 @@
             d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h10a1 1 0 00.95-.68L21 9M7 13V6h14"
           />
         </svg>
-        <span class="text-sm font-medium">Cart ($56)</span>
+        <span class="text-sm font-bold">Cart ($56)</span>
       </div>
     </nav>
     <main>
@@ -65,11 +71,13 @@
       >
         <!-- Text Content -->
         <div class="md:w-1/2">
-          <h1 class="text-2xl md:text-4xl font-bold text-black leading-snug">
+          <h1 class="text-5xl md:text-4xl font-bold text-black leading-snug">
             ALWAYS <span class="text-orange-600">FRESH</span><br />
             <span class="text-orange-600">FLOWERS</span>
           </h1>
-          <p class="mt-4 text-sm md:text-base text-gray-600 max-w-md">
+          <p
+            class="mt-4 font-semibold text-sm md:text-base text-gray-600 max-w-md"
+          >
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
             variety of fresh flowers that are perfect for any occasion.
@@ -82,6 +90,151 @@
             alt="Banner Image"
             class="w-full h-auto border border-dashed border-gray-300"
           />
+        </div>
+      </section>
+
+      <!-- Our Plants Section -->
+      <section class="px-4 md:px-16 py-10 bg-[#f9fbff]">
+        <!-- Section Title -->
+        <div class="text-center mb-8">
+          <h2 class="md:text-4xl font-bold text-5xl">
+            <span class="text-orange-500">Our</span> Plants
+          </h2>
+          <p
+            class="font-medium items-center text-gray-600 text-sm md:text-base mt-1"
+          >
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower <br />
+            shop. From classic roses to exotic blooms, we offer a wide variety
+            of fresh.
+          </p>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Product Card -->
+          <div class="bg-white p-3 rounded-lg shadow text-center">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="Plant 1"
+              class="w-full h-fit object-cover mb-2 border border-dashed border-gray-300"
+            />
+            <h3 class="font-medium text-2xl">Lily Blossom</h3>
+
+            <p class="text-2xl font-bold mt-1">20 USD</p>
+            <button
+              class="mt-2 w-full bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm rounded"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow text-center">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="Plant 1"
+              class="w-full h-fit object-cover mb-2 border border-dashed border-gray-300"
+            />
+            <h3 class="font-medium text-2xl">Lily Blossom</h3>
+
+            <p class="text-2xl font-bold mt-1">20 USD</p>
+            <button
+              class="mt-2 w-full bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm rounded"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow text-center">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="Plant 1"
+              class="w-full h-fit object-cover mb-2 border border-dashed border-gray-300"
+            />
+            <h3 class="font-medium text-2xl">Lily Blossom</h3>
+
+            <p class="text-2xl font-bold mt-1">20 USD</p>
+            <button
+              class="mt-2 w-full bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm rounded"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow text-center">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="Plant 1"
+              class="w-full h-fit object-cover mb-2 border border-dashed border-gray-300"
+            />
+            <h3 class="font-medium text-2xl">Lily Blossom</h3>
+
+            <p class="text-2xl font-bold mt-1">20 USD</p>
+            <button
+              class="mt-2 w-full bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm rounded"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow text-center">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="Plant 1"
+              class="w-full h-fit object-cover mb-2 border border-dashed border-gray-300"
+            />
+            <h3 class="font-medium text-2xl">Lily Blossom</h3>
+
+            <p class="text-2xl font-bold mt-1">20 USD</p>
+            <button
+              class="mt-2 w-full bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm rounded"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow text-center">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="Plant 1"
+              class="w-full h-fit object-cover mb-2 border border-dashed border-gray-300"
+            />
+            <h3 class="font-medium text-2xl">Lily Blossom</h3>
+
+            <p class="text-2xl font-bold mt-1">20 USD</p>
+            <button
+              class="mt-2 w-full bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm rounded"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow text-center">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="Plant 1"
+              class="w-full h-fit object-cover mb-2 border border-dashed border-gray-300"
+            />
+            <h3 class="font-medium text-2xl">Lily Blossom</h3>
+
+            <p class="text-2xl font-bold mt-1">20 USD</p>
+            <button
+              class="mt-2 w-full bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm rounded"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow text-center">
+            <img
+              src="./assets/sample-flower-image.png"
+              alt="Plant 1"
+              class="w-full h-fit object-cover mb-2 border border-dashed border-gray-300"
+            />
+            <h3 class="font-medium text-2xl">Lily Blossom</h3>
+
+            <p class="text-2xl font-bold mt-1">20 USD</p>
+            <button
+              class="mt-2 w-full bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm rounded"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <!-- ... add 5 more as needed (copy the card structure) -->
         </div>
       </section>
     </main>
