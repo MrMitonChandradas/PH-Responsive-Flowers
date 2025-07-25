@@ -6,8 +6,12 @@
     <title>PH-Assignment-02</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/tailwind.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="font-serif">
     <!-- Navbar -->
     <nav
       class="flex items-center justify-between px-4 md:px-16 py-4 bg-white shadow-sm"
@@ -240,7 +244,7 @@
       </section>
 
       <!-- Flower & Plants Lover Section -->
-      <section class="px-4 md:px-16 py-10 bg-white relative mt-16">
+      <section class="px-4 md:px-12 py-16 bg-white relative mt-20">
         <div
           class="flex flex-col md:flex-row items-center relative gap-6 md:gap-12"
         >
@@ -253,7 +257,7 @@
           </div>
 
           <div class="w-full md:w-1/2 relative">
-            <div class="hidden md:block absolute -top-32 -left-96 z-10">
+            <div class="hidden md:block absolute -top-32 -left-96">
               <img
                 src="./assets/trusted-badge.png"
                 alt="Trusted Badge"
@@ -430,7 +434,7 @@
       <div
         class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left"
       >
-        <!-- Column 1: Logo & Description -->
+        <!-- Logo & Description -->
         <div class="flex flex-col items-center md:items-start">
           <img src="./assets/logo.png" alt="Logo" class="w-24 h-24 mb-4" />
           <p class="text-gray-600 text-1xl font-bold max-w-xs">
@@ -439,7 +443,7 @@
           </p>
         </div>
 
-        <!-- Column 2: Navigation Links -->
+        <!-- Navigation Links -->
         <div>
           <ul class="flex flex-col gap-8 text-xl text-gray-700">
             <li><a href="#" class="hover:underline">Home</a></li>
@@ -450,7 +454,6 @@
           </ul>
         </div>
 
-        <!-- Column 3: Contact Info -->
         <div>
           <ul class="flex flex-col gap-8 text-xl text-gray-700">
             <li><a href="#" class="hover:underline">Features</a></li>
